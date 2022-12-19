@@ -15,13 +15,13 @@ form.addEventListener('submit', (e) => {
     checkInputs();
 });
 
-function checkInputs () {
 // Get values from the inputs & verify. Trim removes spaces from both side.
 
-const usernameValue = username.value.trim();
-const emailValue = email.value.trim();
-const passwordValue = password.value.trim();
-const password2Value = password2.value.trim();
+function checkInputs () {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
 
 // Adding logic into user's inputs.
 
