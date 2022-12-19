@@ -1,3 +1,8 @@
+//Remove the alert before delivering
+alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
+
+// Storing all inputs in the variables.
+
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
