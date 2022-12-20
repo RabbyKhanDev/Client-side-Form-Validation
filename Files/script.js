@@ -1,5 +1,5 @@
 //Remove the alert before delivering
-alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
+// alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
 
 // Storing all inputs in the variables.
 
@@ -28,6 +28,9 @@ function checkInputs () {
     if (usernameValue === '') {
         //show error and add error class
         setErrorFor(username, 'Username is required *');
+
+    } else if (!isUsername(usernameValue)) {
+        setErrorFor(username, 'Must be 3 characters long *');
     } else {
         // add success class
         setSuccessFor(username);
@@ -35,6 +38,7 @@ function checkInputs () {
     // Same for Email
     if (emailValue === '') {
         setErrorFor(email, 'Email is required *');
+
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Email is not valid *')
     } else {
@@ -98,6 +102,14 @@ function isEmail (email) {
 function isPassword (password) {
     const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
     return mediumRegex.test(password);
+}
+
+// Username Validation Regex
+
+function isUsername (username) {
+// 3 Charecters long .{2,}
+const usernameRegex = /^[a-zA-Z\-]+.{2,}$/;
+    return usernameRegex.test(username);
 }
 
 // Show and Hide Password
