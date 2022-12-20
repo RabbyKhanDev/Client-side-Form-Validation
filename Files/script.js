@@ -1,5 +1,5 @@
 //Remove the alert before delivering
-// alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
+alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
 
 // Storing all inputs in the variables.
 
