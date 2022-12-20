@@ -107,9 +107,8 @@ function isPassword (password) {
 // Username Validation Regex
 
 function isUsername (username) {
-// 3 Charecters long .{2,}
-const usernameRegex = /^[a-zA-Z\-]+.{2,}$/;
-    return usernameRegex.test(username);
+    const usernameRegex = /^[a-zA-Z\-]+.{2,}$/; // 3 Charecters long .{2,}
+return usernameRegex.test(username);
 }
 
 // Show and Hide Password
