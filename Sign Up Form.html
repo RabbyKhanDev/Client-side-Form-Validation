@@ -16,7 +16,7 @@
 
     <form action="" class="form" id="form">
 
-    <!-- Each Line-->
+    <!-- Username -->
         <div class="form-control">
             <label>Username</label>
             <input type="text" placeholder="Username" id="username" required>
@@ -26,7 +26,7 @@
         </div>
         <!-- Line Closed -->
     
-    <!-- Each Line-->
+    <!-- Email -->
         <div class="form-control">
             <label>Email</label>
             <input type="email" placeholder="name@email.com" id="email" required>
@@ -36,14 +36,16 @@
         </div>
         <!-- Line Closed -->
         
-    <!-- Each Line-->
+    <!-- Password -->
         <div class="form-control">
             <label>Password</label>
             <input type="password" placeholder="Password" id="password" required>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <p class="showPassPara">Show password</p>
-            <input type="checkbox" class="checkBox" id="checkBox">
+            <div class="passCheckDiv">
+                <input type="checkbox" class="checkBox" id="checkBox">
+                <p class="showPassPara">Show password</p>
+            </div>
             <small>Error message</small>
         </div>
         <!-- Line Closed -->
