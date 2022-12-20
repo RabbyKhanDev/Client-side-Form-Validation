@@ -94,9 +94,26 @@ body {
 }
 
 #password {
-    margin-bottom: 17px;
+    margin-bottom: 8px;
 }
 
+.showPassPara {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.errorMsg {
+    margin-top: 20px;
+}
+.checkBox {
+    position: relative;
+    margin-top: -27px;
+    margin-bottom: 19px;
+    margin-left: -30px;
+    width: 16px;
+    height: 16px;
+}
 .form button {
     background-color: #8e44ad;
     border: 2px solid #8e44ad;

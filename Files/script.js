@@ -1,5 +1,5 @@
 //Remove the alert before delivering
-alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
+// alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
 
 // Storing all inputs in the variables.
 
@@ -99,3 +99,15 @@ function isPassword (password) {
     const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
     return mediumRegex.test(password);
 }
+
+// Show and Hide Password
+
+checkBox.addEventListener('click', () => {
+    let x = document.getElementById('password');
+
+    if (x.type === 'password') {
+        x.type = 'text';
+    } else {
+        x.type = 'password';
+    }
+})
