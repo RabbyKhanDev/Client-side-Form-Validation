@@ -104,10 +104,9 @@ function isPassword (password) {
 
 checkBox.addEventListener('click', () => {
     let x = document.getElementById('password');
-
-    if (x.type === 'password') {
-        x.type = 'text';
-    } else {
-        x.type = 'password';
-    }
+        if (x.type === 'password') {
+            x.type = 'text';
+        } else {
+            x.type = 'password';
+        }
 })
