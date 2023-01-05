@@ -1,3 +1,4 @@
+alert('Message: This form tests and verifies if the user gives logical input data before sending them to the server.');
 //Remove the alert before delivering
 // alert('This is a Client-Side Validation Form. This form tests and verifies the user\'s given input data before sending them to the server.');
 
@@ -97,11 +98,11 @@ function isEmail (email) {
 
 
 // Password Strength function
-// A-Z, a-z, One number, One special character, Must be six characters or longer.
+// A-Z, a-z, One number, One special character, Must be six characters or longer .{6,}
 
 function isPassword (password) {
-    const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
-    return mediumRegex.test(password);
+    const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!_=+-@#\$%\^&\*])(?=.{6,})");
+    return strongRegex.test(password);
 }
 
 // Username Validation Regex
